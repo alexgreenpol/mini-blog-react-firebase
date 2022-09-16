@@ -1,0 +1,6 @@
+export const authActionTypes = {
+  SET_USER: 'SET_USER',
+  REMOVE_USER: 'REMOVE_USER',
+  SET_ERROR: 'SET_ERROR',
+  REMOVE_ERROR: 'REMOVE_ERROR'
+}

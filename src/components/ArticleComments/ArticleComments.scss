@@ -1,0 +1,37 @@
+@import './../../assets/styles/helpers/variables.scss';
+
+.comments {
+  background-color: $white;
+  padding: 10px;
+  border-radius: 4px;
+
+  &__holder {
+    color: $black;
+  }
+
+  &__item {
+    color: $black;
+    background-color: $white;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    padding: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__reply {
+    color: $grey;
+  }
+
+  &__reply,
+  &__date,
+  &__text {
+    margin-bottom: 5px;
+  }
+
+  & .btn {
+    margin-top: 10px;
+  }
+}

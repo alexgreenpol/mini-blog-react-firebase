@@ -1,0 +1,88 @@
+@import './../../assets/styles/helpers/variables.scss';
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  transition: all 0.5s;
+  background-color: $white;
+  color: $black;
+
+  &__col {
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+
+    &:nth-child(2) {
+      justify-content: center;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+
+  & .mode {
+    margin-right: 50px;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__list-item {
+    margin: 0 10px;
+  }
+
+  &__list-link {
+    color: $black;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: $black;
+  font-size: 24px;
+  font-weight: 600;
+
+  &__title {
+    margin-left: 20px;
+  }
+
+  &__img {
+    width: 60px;
+  }
+}
+
+.dark-theme {
+  & .app-header {
+    background-color: $black;
+
+    & .logo__title {
+      color: $white;
+    }
+
+    & .menu__list-link {
+      color: $white;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    & .mode span {
+      color: $white;
+    }
+  }
+}

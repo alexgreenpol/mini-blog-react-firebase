@@ -1,0 +1,28 @@
+@import '../../assets/styles/helpers/variables.scss';
+
+.post {
+  border: 1px solid $grey-dark;
+  padding: 10px;
+  margin: 10px 0;
+
+  &__meta {
+    color: $white;
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+  }
+
+  &__email {
+    margin-right: 10px;
+  }
+
+  &__control {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+    & .btn {
+      margin-left: 10px;
+    }
+  }
+}
