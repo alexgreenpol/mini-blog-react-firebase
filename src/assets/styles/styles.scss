@@ -237,3 +237,10 @@ body {
     }
   }
 }
+
+.home-page {
+  & .btn--edit,
+  & .btn--remove {
+    display: none;
+  }
+}
